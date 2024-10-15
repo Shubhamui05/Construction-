@@ -1,0 +1,39 @@
+/* Container styles */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between product cards */
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 20px); /* Flexible sizing for the product cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/* Ensure all images are the same size */
+.product-image {
+    width: 100%;  /* Fixed width for all images */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    border-radius: 5px; /* Optional: add rounded corners */
+    
+}
+
+/* Additional styles for buttons and text */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #b400ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0062;
+}

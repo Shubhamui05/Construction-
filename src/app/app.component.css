@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(218, 11, 45, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(250, 226, 226, 0.732);
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(12, 12, 12, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  color: #0e0d0d;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  color: #ff0062ff;
+  /* text-shadow: 0 0 10px #fff,   
+               0 0 20px #fff, 
+               0 0 30px #ff00ff, 
+               0 0 40px #ff00ff, 
+               0 0 50px #ff00ff, 
+               0 0 60px #ff00ff, 
+               0 0 70px #ff00ff; */
+  font-size: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 45px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-shadow: 0 0 10px #fff, /* White glow */ 0 0 20px #fff, 0 0 30px #ff0062,
+    /* Magenta glow */ 0 0 40px #ff0062, 0 0 50px #ff0062, 0 0 60px #ff0062,
+    0 0 70px #ff0062;
+}
+
+#menu-icon {
+  font-size: 36px;
+  color: #9eb617;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .nav-bg {
+    position: fixed;
+    top: 8.5%;
+    left: 0;
+    width: 100%;
+    height: 295px;
+    background: rgba(19, 18, 18, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav-bg.active {
+    display: block;
+  }
+}
+
+
+
+/* General Container Styling */
+/* General Container Styling */
+/* Slide Contianer */
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-container:hover .slide {
+  filter: brightness(0.8);
+}
+

@@ -1,0 +1,127 @@
+  <div class="landing-container">
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <h1>Welcome to my Portfolio</h1>
+        <p>Discover amazing content and learn something new every day.</p>
+      </section>
+    
+      <!-- Cards Section -->
+      <section class="cards-container">
+        <div class="card" *ngFor="let card of cards">
+          <div class="card-content">
+            <img [src]="card.img" alt="{{ card.title }}" class="card-img">
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.description }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+          <h1>Unlock Your Potential</h1>
+          <p>Join our platform and start learning from industry experts.</p>
+          <button class="cta-button">Get Started</button>
+        </section>
+      
+        <!-- Main Content Section -->
+        <section class="main-content">
+          <h1>Why Choose Us?</h1>
+          <p>Discover a variety of courses designed to help you achieve your career goals.</p>
+        </section>
+      
+        <!-- Features Cards Section -->
+        <section class="cards-container">
+          <div class="card" *ngFor="let card of secondCard">
+            <div class="card-content">    
+              <h3>{{ card.title }}</h3>
+              <p>{{ card.description }}</p>  
+            </div>
+          </div>
+        </section>
+
+        <div id="portfolio">
+          <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="./assest/wireframe.jpeg" alt=""/>
+                <div class="layer">
+                  <h3>Health Care Dashboard</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    tempore commodi repudiandae quam at necessitatibus maxime
+                    laboriosam ipsum dolores. Labore totam quos non repellat culpa,
+                    nam unde asperiores sapiente doloribus.
+                  </p>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="./assest/web-aap-img.jpg" alt="" />
+                <div class="layer">
+                  <h3>Employee Dashboard</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    tempore commodi repudiandae quam at necessitatibus maxime
+                    laboriosam ipsum dolores. Labore totam quos non repellat culpa,
+                    nam unde asperiores sapiente doloribus.
+                  </p>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="./assest/web-devlopment.png" alt="" />
+                <div class="layer">
+                  <h3>Online Shoping App</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    tempore commodi repudiandae quam at necessitatibus maxime
+                    laboriosam ipsum dolores. Labore totam quos non repellat culpa,
+                    nam unde asperiores sapiente doloribus.
+                  </p>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <a href="" class="btn">See more</a>
+          </div>
+        </div>    
+
+
+  
+
+
+
+
+      
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+          <h1>What Our Users Say</h1>
+          <div class="testimonial" *ngFor="let testimonial of testimonials">
+            <blockquote>{{ testimonial.feedback }}</blockquote>
+            <p>- {{ testimonial.name }}</p>
+          </div>
+        </section>
+    
+      <!-- Footer Section -->
+
+      
+      
+
+
+
+
+
+
+
+      <footer>
+        <p>&copy; 2024 My Platform. All rights reserved.</p>
+      </footer>
+    </div>
+  
+    

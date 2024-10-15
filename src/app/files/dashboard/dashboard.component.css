@@ -1,0 +1,208 @@
+.landing-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 20px 20px;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  
+  
+}
+
+#portfolio{
+  padding: 50px 0;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;    
+}
+.layer{
+  height: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}   
+
+
+
+
+
+/* Hero Section */
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding: 50px 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ffc107;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+
+.cta-button:hover {
+  background-color: #e0a800;
+}
+
+/* Main Content Section */
+.main-content {
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 227px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+.card-img {
+  width: 150px;
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures image scales without distortion */
+  border-bottom: 1px solid #ddd;
+  margin-left: 50px;
+
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin: 40px 0;
+}
+
+ h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card, .hero, .testimonial {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
